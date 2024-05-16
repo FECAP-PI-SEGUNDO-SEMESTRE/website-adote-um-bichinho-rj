@@ -23,11 +23,11 @@ function Header(){
     return(
         <HeaderContainer>
             <ImageContainer>
-                <LogoImage src={LogoImg} />
+                <a href="../"><LogoImage src={LogoImg} /></a>
             </ImageContainer>
             <NavBar/>
         </HeaderContainer>
     )
 }
 
-export default Header;
+export default Header

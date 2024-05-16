@@ -6,6 +6,7 @@ import Contato from './pages/Contato'
 import styled from "styled-components"
 
 const Container = styled.div`
+  background-color: #D5F0FF;
   margin: 0 auto;
   width: 80%;
 `

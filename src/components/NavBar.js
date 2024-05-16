@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from 'react-router-dom'
 import PetLove from '../assets/Petlove.png'
-// import Petz from '../assets/PetzLogo.png'
+import Petz from '../assets/PetzLogo.png'
 
 const NavBarContainer = styled.div`
     display:flex;
@@ -33,7 +33,11 @@ const MenuContainer = styled.div`
     width: 100%; 
 `;
 
-const PLimage = styled.img`
+const PetLoveImage = styled.img`
+     width: 20%;
+
+`
+const PetzImage = styled.img`
      width: 20%;
 
 `
@@ -45,8 +49,8 @@ function NavBar(){
                 <StyledLink to="/adote">Adote</StyledLink>
                 <StyledLink to="/sobre">Sobre</StyledLink>
                 <StyledLink to="/contato">Contato</StyledLink>
-                <StyledLink to="#"><PLimage src={PetLove}/></StyledLink></MenuContainer>
-            {/* <ImageContainer to="#"><img src={Petz}/></ImageContainer> */}
+                <StyledLink to="#"><PetLoveImage src={PetLove}/></StyledLink></MenuContainer>
+                <StyledLink to="#"><PetzImage src={Petz}/></StyledLink>
         </NavBarContainer>
     )
 }
