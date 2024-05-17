@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Adote from './pages/Adote'
 import Contato from './pages/Contato'
 import styled from "styled-components"
+import GlobalStyles from "./styles/GlobalStyle"
 
 const Container = styled.div`
   background-color: #D5F0FF;
@@ -15,6 +16,7 @@ const Container = styled.div`
 function App(){
   return(
     <Container>
+      <GlobalStyles/>
       <Router>
        <Routes>
           <Route path="/" element={<Home />}/>
