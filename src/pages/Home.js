@@ -9,12 +9,15 @@ import IMG2 from "../assets/img-3.jpg"
 import IMG3 from "../assets/img-4.jpg"
 import IMG4 from "../assets/apadrinhamento.jpg"
 import IMG5 from "../assets/doe.jpg"
+import IMG6 from "../assets/bazar.jpg"
+import IMG7 from "../assets/denuncie.jpg"
+import IMG8 from "../assets/Vakinha.png"
 
 const MainImage = styled.img`
     border-radius: 26px;
     justify-content: center;
     width: 70%;
-    height: 600px;
+    height: 500px;
     object-fit: cover;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -28,20 +31,23 @@ const InfoContainer = styled.div`
     justify-content: center;
 `
 
-const ButtonsContainer = styled.div`
-    display: flex;
-    justify-content: center;
-`
 const InfoBlock = styled.div`
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 5%;
-    margin:0 3% 0 3%;
+    margin: 0 5% 0 5%;
+    width:26em;
 `
 const InfoBlock2 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5% 0 5% 0;
+    align-items: center;
+    margin: 5% 2% 5% 2%;
+`
+const InfoBlock3 = styled.div`
+    display: flex;
+    justify-content: space-around;
+
 `
 const Subtitle = styled.h1`
     color: #508E9D;
@@ -54,24 +60,33 @@ const ImageContainer = styled.div`
     justify-content: center;
 `
 const InfoImage = styled.img`
-    width: 70%;
-    height: 350px;
+    width: 22em;
+    height: 19em;
     object-fit: cover;
-    border-radius: 20px;
-    
+    border-radius: 5%;
+    &:hover{
+        border: 5px solid #ccc;
+    }
 `
 const InfoImage2 = styled.img`
-    width: 85%;
-    height: 500px;
+    width: 16em; 
+    height: 16em; 
     object-fit: cover;
-    border-radius: 20px;
-    
+    border-radius: 5%;
+    margin: 0 5% 0 5%;
+`
+const InfoImage3 = styled.img`
+    width: 16em; 
+    height: 16em; 
+    object-fit: cover;
+    border-radius: 5%;
+    margin: 0 5% 0 5%;
 `
 const Text = styled.p`
     font-size: 1.01em;
     text-align: start;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: sans-serif;
 `
 const Button = styled.button`
@@ -85,9 +100,37 @@ const Button = styled.button`
     font-weight: bold;
     font-size: 125%;
     padding: 8px;
-    margin-top: 20px;
+    margin: 10px;
     &:hover{
         color:#508E9D;
+        background-color: #fff;
+    }
+`
+const VakinhaContainer = styled.div`
+    background-image: url(${IMG8});
+    width: 90%;
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    margin: 1%;
+`;
+
+const VakinhaButton = styled.button`
+    cursor: pointer; 
+    padding: 3px 10px;
+    border-radius: 5px;
+    border:none;
+    background-color: #F7B0D2;
+    color: #ffffff;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 125%;
+    padding: 8px;
+    margin: 50px;
+    &:hover{
+        color: #F7B0D2;
         background-color: #fff;
     }
 `
@@ -123,21 +166,34 @@ function Home(){
             </InfoContainer>
 
             {/* ADOTAR, APADRINHAR E DOAR */}
-            <ButtonsContainer>
+            <InfoContainer>
                 <InfoBlock2>
                     <InfoImage2 src={IMG3} alt=""/>
                     <a href="../adote"><Button>ADOTAR</Button></a>
                 </InfoBlock2>
                 <InfoBlock2>
                     <InfoImage2 src={IMG4} alt=""/>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScL0-7gocM3tH51omzkd4cyGkdZuAOToOoFhXZlwsFDCF045w/viewform"><Button> APADRINHAR</Button></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScL0-7gocM3tH51omzkd4cyGkdZuAOToOoFhXZlwsFDCF045w/viewform"><Button>APADRINHAR</Button></a>
                 </InfoBlock2>
                 <InfoBlock2>
                     <InfoImage2 src={IMG5} alt=""/>
                     <a href="https://www.asaas.com/c/242439642795?fbclid=PAAaa5qq3hUyQtm-PgCXUljSupl0UqtKJkoRKbekLGJWJNjKLReiyDRWfGC7I"><Button>DOAR</Button></a>
                 </InfoBlock2>
-            </ButtonsContainer>   
+            </InfoContainer>
 
+            {/* BAZAR E DENÚNCIA */} 
+            <InfoContainer>
+                <InfoBlock3>
+                    <InfoImage3  src={IMG6} alt="Informações sobre o Bazar Beneficente"/>
+                    <InfoImage3  src={IMG7} alt="Informações sobre denúncia"/>
+                </InfoBlock3>
+            </InfoContainer>
+
+            {/* VAKINHA */} 
+                <VakinhaContainer>
+                    {/* <div><VakinhaImage src={IMG8} alt=""/></div> */}
+                    <div><a href="//www.vakinha.com.br/vaquinha/canis-adote-um-bichinho-rj?"><VakinhaButton>AJUDE-NOS</VakinhaButton></a></div>
+                </VakinhaContainer>
             <Footer/>
         </div>
     )

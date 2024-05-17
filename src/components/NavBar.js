@@ -13,17 +13,21 @@ const NavBarContainer = styled.div`
 `
 
 const StyledLink = styled(Link)`
-    color: #000;
+    font-weight: 500;
+    color: #333;
     text-decoration: none;
     width: auto;
     margin: 0 1em;
-    &:hover{
-        background-color: #000;
-        border-radius: 30%;
-        color:#fff;
-    }
+    background-color: #D5F0FF;
+    padding: 1% 2%;
+    border-radius: 1em;
     display: flex;
-    
+
+    &:hover{
+        background-color: #F7B0D2;
+        border-radius: 1em;
+        color:#fff;
+    }  
 `
 
 const MenuContainer = styled.div`
@@ -34,12 +38,15 @@ const MenuContainer = styled.div`
 `;
 
 const PetLoveImage = styled.img`
-     width: 20%;
+     width: 5em;
+     height: 1.3em;
+     object-fit: cover;
 
 `
 const PetzImage = styled.img`
-     width: 20%;
-
+    width: 5em;
+    height: 1.1em;
+    object-fit: contain;
 `
 
 function NavBar(){

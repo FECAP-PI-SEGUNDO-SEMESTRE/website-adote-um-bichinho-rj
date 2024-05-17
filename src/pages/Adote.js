@@ -6,9 +6,10 @@ import Titulo from '../components/TituloAdote'
 import ImagemAbrigo from '../assets/Abrigo.png'
 
 const Subtitle = styled.h1`
+
     color: #508E9D;
-    text-align: center;
-    font-size: 35px;
+    text-align: left;
+    font-size: 200%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 `
 const InfoContainer = styled.div`
@@ -20,12 +21,18 @@ const Text = styled.p`
     margin-right: 20%;
     text-align: justify;
 `
+
+const FormContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
 `
 const Image = styled.img`
-    width: 430px;
+    width: 400px;
     height: 260px;
     object-fit: cover;
     border-radius: 20px;
@@ -60,10 +67,10 @@ function Adote(){
                     <Text>Nosso propósito é <strong>resgatar</strong> e <strong>cuidar</strong>  dos animais que enfrentam situações de rua, abandono e crueldade, muitas vezes lutando contra a fome, ferimentos e doenças. Consideramos nossa missão cumprida quando conseguimos encontrar lares amorosos e responsáveis para cada um dos animais que resgatamos, oferecendo-lhes a chance de uma vida digna e cheia de muito amor! </Text>
                 </div>
 
-                <div>
+                <FormContainer>
                     <ImageContainer><Image src={ImagemAbrigo} alt=""/></ImageContainer>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScNAmREZXkeGckyDZsXmt4nZuf95HfvQnqGERcpFZMf8czJ4A/viewform"><Button>FORMULÁRIO DE ADOÇÃO</Button></a>
-                </div>
+                </FormContainer>
             </InfoContainer>
             <Footer/>
         </div>
