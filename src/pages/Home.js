@@ -11,7 +11,7 @@ import IMG4 from "../assets/apadrinhamento.jpg"
 import IMG5 from "../assets/doe.jpg"
 import IMG6 from "../assets/bazar.jpg"
 import IMG7 from "../assets/denuncie.jpg"
-import IMG8 from "../assets/Vakinha.png"
+import IMG8 from "../assets/Vakinha.jpg"
 
 const MainImage = styled.img`
     border-radius: 26px;
