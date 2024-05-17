@@ -4,22 +4,48 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Titulo from '../components/TituloAdote'
 import ImagemAbrigo from '../assets/Abrigo.png'
+import { Container } from '../App'
 
+
+const MainContainer = styled.div`
+@media (max-width: 1000px){
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+`
 const Subtitle = styled.h1`
 
     color: #508E9D;
     text-align: left;
     font-size: 200%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+    @media (max-width: 1000px) {
+        font-size: 150%; 
+    }
 `
 const InfoContainer = styled.div`
     display:flex;
     justify-content: center;
     margin: 5% 10% 5% 10%;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;   
+    }
+    
 `
 const Text = styled.p`
     margin-right: 20%;
     text-align: justify;
+
+    @media (max-width: 1000px) {
+           margin-right:0;
+           text-align:justify;
+           
+           justify-content: center;
+        }
 `
 
 const FormContainer = styled.div`
@@ -62,10 +88,10 @@ function Adote(){
             <Header/>
             <Titulo/>
             <InfoContainer>
-                <div>
+                <MainContainer>
                     <Subtitle>Como Fazer uma Adoção?</Subtitle>
                     <Text>Nosso propósito é <strong>resgatar</strong> e <strong>cuidar</strong>  dos animais que enfrentam situações de rua, abandono e crueldade, muitas vezes lutando contra a fome, ferimentos e doenças. Consideramos nossa missão cumprida quando conseguimos encontrar lares amorosos e responsáveis para cada um dos animais que resgatamos, oferecendo-lhes a chance de uma vida digna e cheia de muito amor! </Text>
-                </div>
+                </MainContainer>
 
                 <FormContainer>
                     <ImageContainer><Image src={ImagemAbrigo} alt=""/></ImageContainer>

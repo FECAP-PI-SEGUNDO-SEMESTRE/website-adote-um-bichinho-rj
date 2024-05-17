@@ -6,10 +6,14 @@ import Contato from './pages/Contato'
 import styled from "styled-components"
 import GlobalStyles from "./styles/GlobalStyle"
 
-const Container = styled.div`
+export const Container = styled.div`
   background-color: #D5F0FF;
   margin: 0 auto;
   width: 80%;
+
+  @media (max-width: 700px){
+    width: 95%;
+  }
 `
 
 

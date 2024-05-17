@@ -8,6 +8,10 @@ const GlobalStyles = createGlobalStyle`
         color: #333;
         background: url('${BgImage}')
     }
+
+    body a{
+        text-decoration:none;
+    }
 `;
 
 export default GlobalStyles;

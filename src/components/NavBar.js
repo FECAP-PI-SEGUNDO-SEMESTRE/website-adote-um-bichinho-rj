@@ -23,6 +23,10 @@ const StyledLink = styled(Link)`
     border-radius: 1em;
     display: flex;
 
+    @media (max-width: 700px){
+        margin: 0 0.5em;
+    }
+
     &:hover{
         background-color: #F7B0D2;
         border-radius: 1em;
@@ -56,8 +60,8 @@ function NavBar(){
                 <StyledLink to="/adote">Adote</StyledLink>
                 <StyledLink to="/sobre">Sobre</StyledLink>
                 <StyledLink to="/contato">Contato</StyledLink>
-                <StyledLink to="#"><PetLoveImage src={PetLove}/></StyledLink></MenuContainer>
-                <StyledLink to="#"><PetzImage src={Petz}/></StyledLink>
+                <StyledLink to="https://adoteumbichinhorj.petlove.com.br/"><PetLoveImage src={PetLove}/></StyledLink></MenuContainer>
+                <StyledLink to="https://adoteumbichinhorj.parceiropetz.com.br/"><PetzImage src={Petz}/></StyledLink>
         </NavBarContainer>
     )
 }
