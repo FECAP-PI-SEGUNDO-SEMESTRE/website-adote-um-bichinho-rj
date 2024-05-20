@@ -114,7 +114,6 @@ const Text = styled.p`
 `
 const Button = styled.button`
     cursor: pointer; 
-    width: 30%;
     padding: 3px 10px;
     border-radius: 5px;
     border:none;
@@ -229,6 +228,7 @@ function Home() {
             </InfoContainer>
 
             {/* ADOTAR, APADRINHAR E DOAR */}
+
             {/* <InfoContainer>
                 <InfoBlock2>
                     <InfoImage2 src={IMG3} alt="" />

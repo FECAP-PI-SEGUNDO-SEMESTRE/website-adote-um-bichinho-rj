@@ -14,6 +14,12 @@ const HeaderContainer = styled.header`
 `
 const LogoImage = styled.img`
     width: 50%;
+    border-radius: 50%;
+    margin: 5% 0 0 5%;
+    transition: filter 0.3s ease;
+    &:hover{
+        filter: brightness(105%);
+    }
 `
 
 const ImageContainer = styled.div`
