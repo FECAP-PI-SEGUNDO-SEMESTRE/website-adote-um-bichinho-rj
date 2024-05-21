@@ -207,7 +207,7 @@ function Home() {
             {/* SOBRE A ONG + COMO AJUDAR?*/}
             <InfoContainer>
                 <InfoBlock>
-                    <Subtitle>Sobre a ONG</Subtitle>
+                    <Subtitle id="sobre">Sobre a ONG</Subtitle>
                     <ImageContainer><InfoImage src={IMG1} alt="" /></ImageContainer>
                     <Text>Nosso propósito é <strong>resgatar</strong> e <strong>cuidar </strong>
                         dos animais que enfrentam situações de rua, abandono e crueldade, muitas vezes

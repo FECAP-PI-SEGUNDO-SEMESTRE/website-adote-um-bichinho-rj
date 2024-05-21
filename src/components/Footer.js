@@ -20,6 +20,7 @@ const FooterList = styled.ul`
     
 `
 
+
 const FooterContainer = styled.footer`
     background: linear-gradient(to left, #F7B0D2, #508E9D);
     justify-content: space-around;

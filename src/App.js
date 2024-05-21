@@ -5,6 +5,7 @@ import Adote from './pages/Adote'
 import Contato from './pages/Contato'
 import styled from "styled-components"
 import GlobalStyles from "./styles/GlobalStyle"
+import Sobre from "./pages/Sobre"
 
 export const Container = styled.div`
   background-color: #D5F0FF;
@@ -26,6 +27,7 @@ function App(){
           <Route path="/" element={<Home />}/>
           <Route path="/adote" element={<Adote />}/>
           <Route path="/contato" element={<Contato/>}/>
+          <Route path="/sobre" element={<Sobre/>}/>
         </Routes>
       </Router>
     </Container>

@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         color: #333;
-        background: url('${BgImage}')
+        background: url('${BgImage}');
     }
 
     body a{
