@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 
+
 const ContactContainer = styled.div`
     display: flex;
     padding: 50px 20px;
@@ -71,7 +72,7 @@ const ContactForm = () => {
       e.preventDefault();
       try {
         const response = await axios.post('http://localhost:5000/submit-form', formData);
-        alert('Dados  enviados com sucesso!');
+        alert('Dados enviados com sucesso!');
       } catch (error) {
         console.error('Erro ao enviar dados do formulário:', error);
         alert('Erro ao enviar dados do formulário. Por favor, tente novamente mais tarde.');

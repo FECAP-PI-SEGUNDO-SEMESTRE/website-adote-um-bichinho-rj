@@ -1,20 +1,20 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise');
 const dotenv = require('dotenv');
 const path = require('path');
 
 dotenv.config();
 
 app.use(cors({
-    origin: 'http://localhost:3000' // Permite requisições do frontend
+    origin: 'http://localhost:3000' //permite requisições do frontend
 }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Rota para lidar com o envio do formulário
+//rota para lidar com o envio do formulário
 app.post('/submit-form', async (req, res) => {
     try {
         const { nome, email, assunto, mensagem } = req.body;

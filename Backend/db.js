@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise');
 
 // Rota para lidar com o envio do formulário de contato
 router.post('/submit-form', async (req, res) => {

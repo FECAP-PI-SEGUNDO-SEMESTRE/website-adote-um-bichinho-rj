@@ -18,7 +18,7 @@ const LogoImage = styled.img`
     margin: 5% 0 0 5%;
     transition: filter 0.3s ease;
     &:hover{
-        filter: brightness(105%);
+        filter: brightness(80%);
     }
 `
 

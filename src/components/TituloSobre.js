@@ -12,10 +12,11 @@ const TitleContainer = styled.div`
     color: #edfbff;
 `
 
-export function Titulo(){
+function Titulo(){
     return(
         <TitleContainer><h1>QUEM SOMOS</h1></TitleContainer>
     )
 }
 
+export default Titulo
 
