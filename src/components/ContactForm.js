@@ -71,8 +71,14 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await axios.post('http://localhost:5000/submit-form', formData);
-        alert('Dados enviados com sucesso!');
+        // const response = 
+        // await axios.post('http://localhost:5000/submit-form', formData);
+        // alert('Dados enviados com sucesso!');
+        await axios.post('http://localhost:5000/api/form', formData,{
+          headers:{
+            "Content-Type": "form-data"
+          }
+        })
       } catch (error) {
         console.error('Erro ao enviar dados do formulário:', error);
         alert('Erro ao enviar dados do formulário. Por favor, tente novamente mais tarde.');
