@@ -60,7 +60,7 @@ function NavBar(){
                 <StyledLink to="/adote">Adote</StyledLink>
                 <StyledLink to="/sobre">Sobre</StyledLink>
                 <StyledLink to="/contato">Contato</StyledLink>
-                <StyledLink to="https://adoteumbichinhorj.petlove.com.br/"><PetLoveImage src={PetLove}/></StyledLink></MenuContainer>
+                <StyledLink to="https://adoteumbichinhorj.petlove.com.br"><PetLoveImage src={PetLove}/></StyledLink></MenuContainer>
                 <StyledLink to="https://adoteumbichinhorj.parceiropetz.com.br/"><PetzImage src={Petz}/></StyledLink>
         </NavBarContainer>
     )

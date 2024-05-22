@@ -1,3 +1,23 @@
+const express = require('express')
+const app = express()
+const cors = require ('cors')
+const path = require ('path')
+
+app.use(cors({
+    origin: 'http://localhost:3000'
+}))
+app.use(express.json())
+
+const animaisRoutes = require('./routes/animaisRoutes')
+app.use('/api/animais', animaisRoutes)
+
+app.use('/uploads', express.static(path.join(__dirname, '..', 'public', 'uploads')))
+
+const port = process.env.PORT || 5000
+app.listen(port, () =>{
+    console.log(`Server Running on port ${port}`)
+})
+
 // require('dotenv').config();
 // console.log(process.env.DB_HOST, process.env.DB_USER, process.env.DB_PASSWORD, process.env.DB_DATABASE);
 
@@ -46,20 +66,3 @@
 // app.listen(port, () => {
 //     console.log(`Server Running on port ${port}`);
 // });
-const express = require('express')
-const app = express()
-const cors = require ('cors')
-const path = require ('path')
-
-app.use(cors({
-    origin: 'http://localhost:3000'
-}))
-app.use(express.json())
-
-const personagensRoutes = require('./routes/personagensRoutes')
-app.use('/api/form', personagensRoutes)
-
-const port = process.env.PORT || 5000
-app.listen(port, () =>{
-    console.log(`Server Running on port ${port}`)
-})

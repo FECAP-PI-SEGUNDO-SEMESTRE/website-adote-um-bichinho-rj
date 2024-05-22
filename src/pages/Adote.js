@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Titulo from '../components/TituloAdote'
 import ImagemAbrigo from '../assets/Abrigo.png'
-import { Container } from '../App'
+import AnimalForm from '../components/AnimalForm'
+import AnimalList from '../components/AnimalList'
 
 
 const MainContainer = styled.div`
@@ -12,13 +13,25 @@ const MainContainer = styled.div`
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center
+    align-items:center;
 }
 `
 const Subtitle = styled.h1`
 
     color: #508E9D;
     text-align: left;
+    font-size: 200%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+    @media (max-width: 1000px) {
+        font-size: 150%; 
+    }
+`
+
+const Subtitle2 = styled.h1`
+
+    color: #508E9D;
+    text-align: center;
     font-size: 200%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 
@@ -39,6 +52,9 @@ const InfoContainer = styled.div`
 const Text = styled.p`
     margin-right: 20%;
     text-align: justify;
+    color: #444;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
 
     @media (max-width: 1000px) {
            margin-right:0;
@@ -73,7 +89,7 @@ const Button = styled.button`
     border:none;
     background-color: #508E9D;
     color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 125%;
     padding: 8px;
@@ -84,6 +100,7 @@ const Button = styled.button`
     }
 `
 function Adote(){
+    const [refresh, setRefresh] = useState(false)
     return(
         <div>
             <Header/>
@@ -99,6 +116,11 @@ function Adote(){
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScNAmREZXkeGckyDZsXmt4nZuf95HfvQnqGERcpFZMf8czJ4A/viewform"><Button>FORMULÁRIO DE ADOÇÃO</Button></a>
                 </FormContainer>
             </InfoContainer>
+
+            <Subtitle2>Cadastro de Animais</Subtitle2>
+            <AnimalForm setRefresh={setRefresh}/>
+            <Subtitle2>Animais Cadastrados</Subtitle2>
+            <AnimalList refresh={refresh} setRefresh={setRefresh}/>
             <Footer/>
         </div>
     );

@@ -19,7 +19,7 @@ const MainImage = styled.img`
     border-radius: 26px;
     justify-content: center;
     width: 70%;
-    height: 500px;
+    height: 36em;
     object-fit: cover;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -98,11 +98,11 @@ const InfoImage2 = styled.img`
     }
 `
 const InfoImage3 = styled.img`
-    width: 20em; 
-    height: 20em; 
+    width: 30em; 
+    height: 33em; 
     object-fit: cover;
     border-radius: 5%;
-    margin: 0 5% 0 5%;
+    margin: 5em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     @media (max-width: 1000px){
