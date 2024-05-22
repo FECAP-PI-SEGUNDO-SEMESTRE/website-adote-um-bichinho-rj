@@ -63,6 +63,7 @@ const Image = styled.img`
     object-fit: cover;
     border-radius: 20px;
     margin: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `
 
 const Button = styled.button`

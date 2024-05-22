@@ -23,6 +23,7 @@ const MainImage = styled.img`
     object-fit: cover;
     margin-bottom: 5%;
     margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `
 const MainContainer = styled.main`
     display: flex;
@@ -77,6 +78,7 @@ const InfoImage = styled.img`
     height: 19em;
     object-fit: cover;
     border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     &:hover{
         border: 5px solid #ccc;
     }
@@ -87,6 +89,7 @@ const InfoImage2 = styled.img`
     object-fit: cover;
     border-radius: 5%;
     margin: 0 5% 0 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     @media (max-width: 700px){
         margin: 5%;
@@ -100,6 +103,7 @@ const InfoImage3 = styled.img`
     object-fit: cover;
     border-radius: 5%;
     margin: 0 5% 0 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     @media (max-width: 1000px){
         margin: 5%;

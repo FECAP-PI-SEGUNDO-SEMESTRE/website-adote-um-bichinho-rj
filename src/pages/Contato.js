@@ -43,6 +43,7 @@ const Image = styled.img`
     object-fit: cover;
     border-radius: 10%;
     border: 5px solid #508E9D;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `
 
 function Contato(){
