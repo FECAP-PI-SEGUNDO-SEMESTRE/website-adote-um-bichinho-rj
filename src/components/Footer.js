@@ -1,15 +1,31 @@
 import React from "react"
 // import { RiFacebookBoxFill } from "react-icons/ri";
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
+const EstiloFooter = css`
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
 
+    &:hover {
+        color: #eee;
+    }
+`
+const StyleLink = styled.a`
+${EstiloFooter}`
+
+const StyleCreators = styled.li`
+${EstiloFooter}`
+ 
 const link ={
     linkedin: [
-    <a href="https://www.linkedin.com/in/fabrício-freitas-gomes-62b48b222/">Rodrigo Correa da Gama</a>,
-    <a href="https://www.linkedin.com/in/fabrício-freitas-gomes-62b48b222/">Fabrício Freitas Gomes</a>, 
-    <a href="https://www.linkedin.com/in/beatriz-d-177976252/">Beatriz de Souza Santos Rio Branco</a>, 
-    <a href="https://www.linkedin.com/in/sabrinna-vicente-049225306/">Sabrinna Cristina Gomes Vicente</a>]
+    <StyleLink href="https://www.linkedin.com/in/fabrício-freitas-gomes-62b48b222/">Rodrigo Correa da Gama</StyleLink>,
+    <StyleLink href="https://www.linkedin.com/in/fabrício-freitas-gomes-62b48b222/">Fabrício Freitas Gomes</StyleLink>, 
+    <StyleLink href="https://www.linkedin.com/in/beatriz-d-177976252/">Beatriz de Souza Santos Rio Branco</StyleLink>, 
+    <StyleLink href="https://www.linkedin.com/in/sabrinna-vicente-049225306/">Sabrinna Cristina Gomes Vicente</StyleLink>]
 }
+
+
 
 const Title = styled.h2`
     color: #FFFFFF;
@@ -18,7 +34,7 @@ const FooterList = styled.ul`
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    
+
 `
 
 
@@ -27,6 +43,10 @@ const FooterContainer = styled.footer`
     justify-content: space-around;
     align-items: start;  
     display: flex;
+
+    @media (max-width: 700px){
+    flex-direction: column;
+  }
 `
 
 function Footer(){
@@ -41,15 +61,15 @@ function Footer(){
             </FooterList>
             <FooterList>
                 <li><Title>Parcerias</Title></li>
-                <a href="https://adoteumbichinhorj.parceiropetz.com.br/" ><li>Loja Petz</li></a>
-                <a href="https://adoteumbichinhorj.petlove.com.br/"><li>Loja PetLove</li></a>
+                <StyleLink href="https://adoteumbichinhorj.parceiropetz.com.br/" ><li>Loja Petz</li></StyleLink>
+                <StyleLink href="https://adoteumbichinhorj.petlove.com.br/"><li>Loja PetLove</li></StyleLink>
             </FooterList>
             <FooterList>
-                <li><Title>Criadoras da ONG</Title></li>
-                <li>Giulia Di Sipio</li>
-                <li>Débora Lima</li>
-                <li>Maria Gabriella</li>
-                <li>Shirley Calmon</li>
+                <StyleCreators><Title>Criadoras da ONG</Title></StyleCreators>
+                <StyleCreators>Giulia Di Sipio</StyleCreators>
+                <StyleCreators>Débora Lima</StyleCreators>
+                <StyleCreators>Maria Gabriella</StyleCreators>
+                <StyleCreators>Shirley Calmon</StyleCreators>
             </FooterList>
         </FooterContainer>
     )

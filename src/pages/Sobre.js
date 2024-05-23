@@ -10,14 +10,22 @@ const Container = styled.div`
     display:flex;
     margin: 5%;
     border-radius: 2em;
+
+    @media (max-width: 1000px) {
+    flex-direction:column;
+    }
 `
 const DivImage = styled.div`
-    background-color: #a8d7e5;
     width:100%;
     flex:1;
     display: flex;
     justify-content: center;
     margin: 5%;
+
+    @media (max-width: 1000px) {
+     align-items: center;
+     margin: 0;
+    }
 `
 const TextContainer = styled.div`
     flex:1;
@@ -49,6 +57,12 @@ const Image = styled.img`
     margin: 2%;
     border: 3px solid #508E9D;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media (max-width: 1000px) {
+    width:95%;
+    margin: 1% auto;
+    border: 1px solid #508E9D;
+    }
 `
 
 function Sobre() {

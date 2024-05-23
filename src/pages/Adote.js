@@ -80,6 +80,10 @@ const Image = styled.img`
     border-radius: 20px;
     margin: 5%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media (max-width: 1000px) {
+           width: 100%;
+        }
 `
 
 const Button = styled.button`

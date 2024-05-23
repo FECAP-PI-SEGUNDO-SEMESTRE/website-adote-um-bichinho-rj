@@ -29,6 +29,10 @@ const Container = styled.div`
     justify-content: space-evenly;
     align-items: center;
     margin: 5% 0;
+
+    @media (max-width: 1000px) {
+        flex-direction:column; 
+    }
 `
 const FormContainer = styled.div`
 
@@ -44,6 +48,19 @@ const Image = styled.img`
     border-radius: 10%;
     border: 5px solid #508E9D;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media (max-width: 1000px) {
+        width: 90%;
+        height: 70%; 
+        margin: 0 auto;
+        object-fit: cover;
+    }
+`
+
+const DivContatoImage = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
 `
 
 function Contato(){
@@ -52,7 +69,7 @@ function Contato(){
             <Header/>
             <Titulo/>
             <Container>
-                <div><Image src={IMG1}/></div>
+                <DivContatoImage><Image src={IMG1}/></DivContatoImage>
                 <FormContainer>
                     <Subtitle>Precisa de Ajuda? Estamos Aqui!</Subtitle>
                     <ContactForm/>

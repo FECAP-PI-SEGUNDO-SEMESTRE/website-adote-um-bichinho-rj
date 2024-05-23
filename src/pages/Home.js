@@ -13,7 +13,7 @@ import IMG4 from "../assets/apadrinhamento.jpg"
 import IMG5 from "../assets/doe.jpg"
 import IMG6 from "../assets/bazar.jpg"
 import IMG7 from "../assets/denuncie.jpg"
-import IMG8 from "../assets/Vakinha.jpg"
+import IMG8 from "../assets/img-vakinha-resize.png"
 
 const MainImage = styled.img`
     border-radius: 26px;
@@ -24,6 +24,10 @@ const MainImage = styled.img`
     margin-bottom: 5%;
     margin-top: 5%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media (max-width: 700px){
+    width: 95%;
+  }
 `
 const MainContainer = styled.main`
     display: flex;
@@ -79,9 +83,17 @@ const InfoImage = styled.img`
     object-fit: cover;
     border-radius: 5%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.2s;
     &:hover{
         border: 5px solid #ccc;
     }
+
+    @media (max-width: 1000px){
+        margin: 2% auto;
+        width: 80%;
+        border: none;
+    }
+
 `
 // const InfoImage2 = styled.img`
 //     width: 16em; 
@@ -106,7 +118,9 @@ const InfoImage3 = styled.img`
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     @media (max-width: 1000px){
-        margin: 5%;
+        margin: 2% auto;
+        width: 95%;
+        object-fit: initial;
     }
 `
 const Text = styled.p`
@@ -128,41 +142,14 @@ const Button = styled.button`
     font-size: 90%;
     padding: 8px;
     margin: 0 auto;
+    transition: 0.3s;
     &:hover{
         color:#508E9D;
         background-color: #fff;
         
     }
 `
-const VakinhaContainer = styled.div`
-    background-image: url(${IMG8});
-    width: 95%;
-    height: 450px;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    align-items:flex-end;
-    margin: 0 auto;
-    margin-top: 5%;
-`;
 
-const VakinhaButton = styled.button`
-    cursor: pointer; 
-    padding: 3px 10px;
-    border-radius: 5px;
-    border:none;
-    background-color: #F7B0D2;
-    color: #ffffff;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 125%;
-    padding: 8px;
-    margin: 50px;
-    &:hover{
-        color: #F7B0D2;
-        background-color: #fff;
-    }
-`
 
 const responsive = {
     desktop: {
@@ -191,6 +178,11 @@ const CarouselImg = styled.img`
     border-radius: 5%;
     display: flex;
     justify-content: center;
+    
+    @media (max-width: 700px){
+    width: 95%;
+    height: 60%;
+  }
 `
 
 const CarouselContainer = styled.div`
@@ -198,6 +190,60 @@ const CarouselContainer = styled.div`
     flex-direction: column;
     margin-bottom: 5%;
 
+`
+const VakinhaImage = styled.img`
+    width: 100%;
+    height:100%;
+`;
+
+
+const VakinhaButton = styled.button`
+    cursor: pointer; 
+    padding: 3px 10px;
+    border-radius: 5px;
+    border:none;
+    background-color: #F7B0D2;
+    color: #ffffff;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 125%;
+    padding: 8px;
+    margin: 50px;
+    transition: 0.2s;
+    &:hover{
+        color: #F7B0D2;
+        background-color: #fff;
+    }
+
+    @media (max-width: 700px){
+    font-size:80%;
+    text-wrap: nowrap;
+  }
+`
+const VakinhaContainer = styled.div`
+flex:1;
+
+@media (max-width: 700px){
+   flex: 6;
+
+  }
+`
+const VakinhaDiv = styled.div`
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+`
+
+const AjudeDiv = styled.div`
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #eee;
+
+    @media (max-width: 700px){
+   flex: 4;
+
+  }
 `
 function Home() {
     return (
@@ -281,11 +327,13 @@ function Home() {
             </InfoContainer>
 
             {/* VAKINHA */}
-            <VakinhaContainer>
-                {/* <div><VakinhaImage src={IMG8} alt=""/></div> */}
-                <div><a href="//www.vakinha.com.br/vaquinha/canis-adote-um-bichinho-rj?"><VakinhaButton>AJUDE-NOS</VakinhaButton></a></div>
-            </VakinhaContainer>
-
+            <VakinhaDiv>
+                <VakinhaContainer>
+                    <VakinhaImage src={IMG8}/>
+                </VakinhaContainer>
+                    {/* <div><VakinhaImage src={IMG8} alt=""/></div> */}
+                <AjudeDiv><a href="//www.vakinha.com.br/vaquinha/canis-adote-um-bichinho-rj?"><VakinhaButton>AJUDE-NOS</VakinhaButton></a></AjudeDiv>
+            </VakinhaDiv>
             
             <Footer />
         </div>

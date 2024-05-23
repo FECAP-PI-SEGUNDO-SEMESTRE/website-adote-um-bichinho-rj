@@ -22,13 +22,13 @@ const Form = styled.form`
 `
 const Input = styled.input`
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
     border-radius: 5px;
     border: 1px solid #ccc;
 `
 const TextArea = styled.textarea`
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     border-radius: 5px;
     border: 1px solid #ccc;
     resize: none;

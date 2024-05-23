@@ -10,6 +10,11 @@ const TitleContainer = styled.div`
     font-weight: bold;
     background: linear-gradient(to left, #F7B0D2, #508E9D);
     color: #edfbff;
+
+    @media (max-width: 1000px){
+        font-size: 125%;
+        text-align:center
+    }
 `
 
 function Titulo(){

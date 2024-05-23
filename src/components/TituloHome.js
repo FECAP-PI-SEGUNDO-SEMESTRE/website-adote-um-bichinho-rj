@@ -13,6 +13,7 @@ const TitleContainer = styled.div`
 
     @media (max-width: 1000px){
         font-size: 125%;
+        text-align:center
     }
 `
 function Titulo(){

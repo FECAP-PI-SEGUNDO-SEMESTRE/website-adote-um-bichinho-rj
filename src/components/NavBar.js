@@ -22,6 +22,7 @@ const StyledLink = styled(Link)`
     padding: 1% 2%;
     border-radius: 1em;
     display: flex;
+    transition: 0.2s;
 
     @media (max-width: 700px){
         margin: 0 0.5em;
