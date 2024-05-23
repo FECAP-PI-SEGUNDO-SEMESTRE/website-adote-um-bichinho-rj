@@ -76,8 +76,18 @@ Se você tiver alguma dúvida ou sugestão sobre o projeto "Adote um Bichinho RJ
 ## Considerações Finais
 
 Este projeto nos proporcionou aprendizados valiosos tanto em programação quanto no funcionamento de uma ONG. A criação da landing page permitiu-nos ampliar o alcance da ONG "Adote um Bichinho RJ" e promover a adoção responsável de animais de estimação de forma mais eficaz. Estamos confiantes de que os resultados alcançados contribuirão para o bem-estar dos animais e para a conscientização da comunidade sobre a importância da adoção responsável.
-<!-- 
 
+## Direitos Autorais
+
+---
+
+**Todos os direitos autorais e intelectuais deste projeto são reservados para a ONG Adote um Bichinho RJ.**
+
+---
+
+Este projeto foi desenvolvido com a autorização expressa da ONG Adote um Bichinho RJ e destina-se exclusivamente para uso em iniciativas relacionadas à adoção de animais e promoção do bem-estar animal.
+
+<!--
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
