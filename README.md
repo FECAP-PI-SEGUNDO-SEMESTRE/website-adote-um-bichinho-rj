@@ -1,3 +1,83 @@
+# Website - Adote um Bichinho RJ
+
+![Logo da ONG](https://github.com/biaiib/react-app-adote-um-bichinho-rj/assets/70111111/f6cc1c05-af97-4362-a7ca-29b3c90a0e84)
+
+Bem-vindo ao repositório do projeto "Website - Adote um Bichinho RJ"! Este projeto foi desenvolvido com o objetivo de facilitar a adoção de animais de estimação na região do Rio de Janeiro.
+
+## Sobre o Projeto
+
+O projeto "Website - Adote um Bichinho RJ" é uma iniciativa de alunos no segundo semestre de Ciência da Computação na FECAP. O cenário de intervenção para este o projeto é o ambiente virtual, mais especificamente a internet e as redes sociais. Esse espaço digital serve para que o usuário busque informações, interaja diretamente com o órgão e consiga ajudar com alguma contribuição, seja monetária ou uma adoção. 
+
+![Criadoras da ONG](https://github.com/biaiib/react-app-adote-um-bichinho-rj/assets/70111111/710f340e-1d16-4775-b9e9-41e44d52fe94)
+
+## Tecnologias Utilizadas
+
+- **Frontend**: HTML, CSS, JavaScript, React.js
+- **Backend**: Node.js
+- **Banco de Dados**: MySQL
+
+## Funcionalidades
+
+- Visualização de animais disponíveis para adoção.
+- Registro de animais perdidos ou encontrados.
+- Recursos educacionais sobre cuidados com os animais.
+- Facilidade de contato com a equipe da ONG Adote um Bichinho RJ.
+
+## Instalação
+
+1. Clone este repositório:
+
+    ```
+    git clone https://github.com/seu-usuario/adote-um-bichinho-rj.git
+    ```
+
+2. Instale as dependências do frontend:
+
+    ```
+    cd src
+    npm install
+    ```
+
+3. Instale as dependências do Backend:
+
+    ```
+    cd ../Backend
+    npm install
+    ```
+
+4. Configure as variáveis de ambiente necessárias, como as credenciais do MySQL.
+
+5. Inicie o servidor backend:
+
+    ```
+    npm run dev
+    ```
+
+6. Inicie o servidor frontend:
+
+    ```
+    npm start
+    ```
+
+## Equipe
+
+- [Beatriz de Souza Santos](https://github.com/biaiib) - Frontend, Backend, React e criação do Banco de Dados.
+- [Rodrigo Correa da Gama](https://github.com/FRgama) - Frontend, Backend e React.
+- [Fabrício Freitas Gomes](https://github.com/Fribaz) - Frontend, Designer UI/UX no Figma e Atualizações no Trello.
+- [Sabrinna Cristina Gomes Vicente](https://github.com/shoucchann) - Designer UI/UX no Figma.
+
+## Contato
+
+Se você tiver alguma dúvida ou sugestão sobre o projeto "Adote um Bichinho RJ", entre em contato com a ONG:
+
+- E-mail: contato@adoteumbichinhorj.org
+- [Site Oficial](https://adoteumbichinhorj.org)
+
+## Considerações Finais
+
+Este projeto nos proporcionou aprendizados valiosos tanto em programação quanto no funcionamento de uma ONG. A criação da landing page permitiu-nos ampliar o alcance da ONG "Adote um Bichinho RJ" e promover a adoção responsável de animais de estimação de forma mais eficaz. Estamos confiantes de que os resultados alcançados contribuirão para o bem-estar dos animais e para a conscientização da comunidade sobre a importância da adoção responsável.
+<!-- 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +148,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+-->
