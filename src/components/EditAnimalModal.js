@@ -79,11 +79,6 @@ function EditAnimalModal({ isOpen, onRequestClose, animal, setRefresh, setEditAn
         if (imagem) formData.append('imagem', imagem)
 
         try {
-            const response = await axios.put(`http://localhost:5000/api/animais/${animal.id}`, formData, {
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                }
-            })
             setRefresh((prev) => !prev)
             setEditAnimal(null)
             onRequestClose()

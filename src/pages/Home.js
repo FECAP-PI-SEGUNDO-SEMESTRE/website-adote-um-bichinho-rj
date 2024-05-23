@@ -45,13 +45,13 @@ const InfoBlock = styled.div`
     margin: 0 5% 0 5%;
     width:26em;
 `
-const InfoBlock2 = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5% 2% 5% 2%;
-`
+// const InfoBlock2 = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 5% 2% 5% 2%;
+// `
 const InfoBlock3 = styled.div`
     display: flex;
     justify-content: space-around;
@@ -83,20 +83,20 @@ const InfoImage = styled.img`
         border: 5px solid #ccc;
     }
 `
-const InfoImage2 = styled.img`
-    width: 16em; 
-    height: 16em; 
-    object-fit: cover;
-    border-radius: 5%;
-    margin: 0 5% 0 5%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+// const InfoImage2 = styled.img`
+//     width: 16em; 
+//     height: 16em; 
+//     object-fit: cover;
+//     border-radius: 5%;
+//     margin: 0 5% 0 5%;
+//     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-    @media (max-width: 700px){
-        margin: 5%;
-        width: 20em;
-        height: 20em;
-    }
-`
+//     @media (max-width: 700px){
+//         margin: 5%;
+//         width: 20em;
+//         height: 20em;
+//     }
+// `
 const InfoImage3 = styled.img`
     width: 30em; 
     height: 33em; 
