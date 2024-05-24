@@ -72,9 +72,9 @@ const ContactForm = () => {
       e.preventDefault();
       try {
         // const response = 
-        // await axios.post('http://localhost:5000/submit-form', formData);
+        // await axios.post('http://projetorg01.mysql.database.azure.com/submit-form', formData);
         // alert('Dados enviados com sucesso!');
-        await axios.post('http://localhost:5000/api/form', formData,{
+        await axios.post('http://projetorg01.mysql.database.azure.com/api/form', formData,{
           headers:{
             "Content-Type": "form-data"
           }

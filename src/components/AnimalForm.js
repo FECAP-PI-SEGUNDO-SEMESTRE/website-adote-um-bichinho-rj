@@ -73,8 +73,9 @@ function AnimalForm({ ais }) {
         formData.append('imagem', imagem);
 
         try {
-            await axios.post('http://localhost:5000/api/animais', formData, {
-                headers: {
+            //await axios.post('http://projetorg01.mysql.database.azure.com/api/animais', formData, {
+                await axios.post('http://projetorg01.mysql.database.azure.com/api/animais', formData, {    
+            headers: {
                     'Content-Type': 'multipart/form-data',
                 },
             });
