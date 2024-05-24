@@ -25,7 +25,7 @@ function AnimalList({ refresh, setRefresh }) {
 
     const fetchAnimais = async () => {
         try {
-            const response = await axios.get('http://projetorg01.mysql.database.azure.com/api/animais')
+            const response = await axios.get('http://localhost:5000/api/animais')
             setAnimais(response.data)
         } catch (error) {
             console.error('Erro ao buscar animais', error)
@@ -34,7 +34,7 @@ function AnimalList({ refresh, setRefresh }) {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://projetorg01.mysql.database.azure.com/api/animais/${id}`)
+            await axios.delete(`http://localhost:5000/api/animais/${id}`)
             fetchAnimais()
         } catch (error) {
             console.error('Erro ao deletar o animal', error)
@@ -43,7 +43,7 @@ function AnimalList({ refresh, setRefresh }) {
 
     const handleEdit = async (id) => {
         try {
-            const response = await axios.get(`http://projetorg01.mysql.database.azure.com/api/animais/${id}`)
+            const response = await axios.get(`http://localhost:5000/api/animais/${id}`)
             setEditAnimal(response.data)
             setIsModalOpen(true)
         } catch (error) {
@@ -55,7 +55,7 @@ function AnimalList({ refresh, setRefresh }) {
         <ListContainer>
             {animais.map((animal) => (
                 <AnimalCard key={animal.id}>
-                    <AnimalImage src={`http://projetorg01.mysql.database.azure.com/uploads/${animal.imagem}`} alt={animal.nome} style={{ width: '100px' }} />
+                    <AnimalImage src={`http://localhost:5000/uploads/${animal.imagem}`} alt={animal.nome} style={{ width: '100px' }} />
                     <AnimalInfo>
                         <AnimalNome>{animal.nome}</AnimalNome>
                         <AnimalDescricao>{animal.descricao}</AnimalDescricao>

@@ -10,6 +10,11 @@ const EstiloFooter = css`
     &:hover {
         color: #eee;
     }
+
+    @media (max-width: 700px) {
+        display: flex;
+        font-size: 1rem;
+    }
 `
 const StyleLink = styled.a`
 ${EstiloFooter}`
