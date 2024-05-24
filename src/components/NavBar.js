@@ -102,12 +102,12 @@ const Hamburger = styled.div`
         border-radius: 5px;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 850px) {
         display: flex;
         margin: 2em;
-        transition: 0.5s;
     }
 `;
+
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
