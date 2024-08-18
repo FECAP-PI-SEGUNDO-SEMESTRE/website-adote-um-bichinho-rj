@@ -24,7 +24,7 @@ ${EstiloFooter}`
  
 const link ={
     linkedin: [
-    <StyleLink href="https://www.linkedin.com/in/fabrício-freitas-gomes-62b48b222/">Rodrigo Correa da Gama</StyleLink>,
+    <StyleLink href="https://www.linkedin.com/in/rodrigo-gama-b38705231/">Rodrigo Correa da Gama</StyleLink>,
     <StyleLink href="https://www.linkedin.com/in/fabrício-freitas-gomes-62b48b222/">Fabrício Freitas Gomes</StyleLink>, 
     <StyleLink href="https://www.linkedin.com/in/beatriz-d-177976252/">Beatriz de Souza Santos Rio Branco</StyleLink>, 
     <StyleLink href="https://www.linkedin.com/in/sabrinna-vicente-049225306/">Sabrinna Cristina Gomes Vicente</StyleLink>]
